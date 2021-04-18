@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: skaffold-demo
+spec:
+  containers:
+  - name: skaffold-demo
+    image: roukou/skaffold-demo
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: skaffold-demo
+  labels:
+    app: Skaffold
+spec:
+  type: ClusterIP
+  ports:
+    - port: 42050
+      targetPort: 42050
+  selector:
+    app: Skaffold
