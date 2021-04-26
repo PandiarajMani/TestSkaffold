@@ -1,7 +1,7 @@
 apiVersion: skaffold/v2beta13
 kind: Config
 metadata:
-  name: skaffold
+  name: skaffold-demo
 build:
   artifacts:
   - image: pandiaraja2/testskaffold
