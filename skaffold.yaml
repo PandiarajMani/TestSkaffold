@@ -1,10 +1,10 @@
 apiVersion: skaffold/v2beta13
 kind: Config
 metadata:
-  name: skaffold-demo
+  name: skaffold
 build:
   artifacts:
-  - image: roukou/skaffold-demo
+  - image: pandiaraja2/testskaffold
     docker:
       dockerfile: Dockerfile
 deploy:
